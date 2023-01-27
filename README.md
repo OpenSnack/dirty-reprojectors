@@ -4,7 +4,13 @@ Quick and dirty re-projections to trick your web maps out of web mercator.
 
 ## Install
 
+    For command line use:
+
     npm install -g @opensnack/dirty-reprojectors
+
+    For browser/node API use:
+
+    npm install @opensnack/dirty-reprojectors
 
 ## Usage
 

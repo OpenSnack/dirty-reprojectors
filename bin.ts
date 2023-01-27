@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import bbox from '@turf/bbox';
 import geojsonStream from 'geojson-stream';
 // import through from 'through2';
