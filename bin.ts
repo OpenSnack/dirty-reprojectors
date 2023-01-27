@@ -5,8 +5,7 @@ import geojsonStream from 'geojson-stream';
 // import through from 'through2';
 import { Transform } from 'stream';
 import minimist from 'minimist';
-import projections from './projections';
-import { reproject } from '.';
+import { reproject, projections } from '.';
   
 function usage (message: string) {
     if (message) { console.error(message) }

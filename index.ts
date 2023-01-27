@@ -1,6 +1,7 @@
-import { GeoGeometryObjects, GeoProjection, GeoStream, geoTransform } from 'd3-geo';
+import { GeoProjection, GeoStream, geoTransform } from 'd3-geo';
 import { Geometry } from 'geojson';
 import { geoProject } from 'd3-geo-projection';
+import projections from './projections';
 
 type ReprojectOptions = {
     forward?: string | GeoProjection;
@@ -20,7 +21,7 @@ type ReprojectOptions = {
  * @param {Object} [options.projections] A map of named projections to use.  If provided, then string values of `options.forward` or `options.reverse` will be used as keys to look up the projection function in `options.projections`.  For an extensive list provided by d3-geo-projection, use `require('dirty-reprojectors/projections')`.
  * @param {Object} geometry A GeoJSON geometry object
  */
-export function reproject(options: ReprojectOptions, geometry: Geometry) {
+function reproject(options: ReprojectOptions, geometry: Geometry) {
     const streams: ((s: GeoStream) => GeoStream)[] = [];
     
     if (options.forward) {
@@ -88,3 +89,7 @@ function clamp(value: number, min: number, max: number) {
     }
 }
 
+export {
+    reproject,
+    projections
+};
