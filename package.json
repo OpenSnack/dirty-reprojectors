@@ -8,6 +8,7 @@
   },
   "main": "./dist/reproject.node.mjs",
   "browser": "./dist/reproject.mjs",
+  "types": "./dist/types/src/index.d.ts",
   "scripts": {
     "build": "node build.cjs && tsc --emitDeclarationOnly --declaration --outDir dist/types",
     "typecheck": "tsc -noEmit -p tsconfig.json",
