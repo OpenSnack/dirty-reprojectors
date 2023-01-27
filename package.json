@@ -7,8 +7,9 @@
     "dirty-reproject": "./bin/reproject.bin.mjs"
   },
   "main": "./dist/reproject.node.mjs",
+  "browser": "./dist/reproject.mjs",
   "scripts": {
-    "build": "node build.cjs",
+    "build": "node build.cjs && tsc --emitDeclarationOnly --declaration --outDir dist/types",
     "typecheck": "tsc -noEmit -p tsconfig.json",
     "lint": "eslint .",
     "test": "npm run lint && npm run test:unit -- --run",

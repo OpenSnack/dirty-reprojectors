@@ -5019,7 +5019,7 @@ Object.keys(ourProjs).forEach((proj) => {
 });
 var projections_default = projections;
 
-// index.ts
+// src/index.ts
 function reproject(options, geometry) {
   const streams = [];
   if (options.forward) {

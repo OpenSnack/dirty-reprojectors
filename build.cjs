@@ -3,7 +3,7 @@ const esbuild = require('esbuild');
 
 // browser
 esbuild.build({
-    entryPoints: ['index.ts'],
+    entryPoints: ['src/index.ts'],
     bundle: true,
     format: 'esm',
     platform: 'browser',
@@ -13,7 +13,7 @@ esbuild.build({
 
 // node
 esbuild.build({
-    entryPoints: ['index.ts'],
+    entryPoints: ['src/index.ts'],
     bundle: true,
     format: 'esm',
     platform: 'node',
@@ -23,7 +23,7 @@ esbuild.build({
 
 // bin
 esbuild.build({
-    entryPoints: ['bin.ts'],
+    entryPoints: ['src/bin.ts'],
     bundle: true,
     format: 'esm',
     platform: 'node',

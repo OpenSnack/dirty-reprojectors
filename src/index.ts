@@ -1,7 +1,7 @@
 import { GeoProjection, GeoStream, geoTransform } from 'd3-geo';
 import { Geometry } from 'geojson';
 import { geoProject } from 'd3-geo-projection';
-import projections from './projections';
+import projections from '../projections';
 
 type ReprojectOptions = {
     forward?: string | GeoProjection;

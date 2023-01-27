@@ -1205,7 +1205,7 @@ function bbox(geojson) {
 bbox["default"] = bbox;
 var es_default = bbox;
 
-// bin.ts
+// src/bin.ts
 var import_geojson_stream = __toESM(require_geojson_stream(), 1);
 var import_minimist = __toESM(require_minimist(), 1);
 import { Transform } from "stream";
@@ -6231,7 +6231,7 @@ Object.keys(ourProjs).forEach((proj) => {
 });
 var projections_default = projections;
 
-// index.ts
+// src/index.ts
 function reproject(options, geometry) {
   const streams = [];
   if (options.forward) {
@@ -6287,7 +6287,7 @@ function clamp(value, min2, max2) {
   }
 }
 
-// bin.ts
+// src/bin.ts
 function usage(message) {
   if (message) {
     console.error(message);
