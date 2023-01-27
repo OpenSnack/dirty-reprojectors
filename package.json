@@ -1,6 +1,6 @@
 {
   "name": "@opensnack/dirty-reprojectors",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "make different projections",
   "type": "module",
   "bin": {
